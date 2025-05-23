@@ -1,0 +1,1112 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2025학년도 KIS 8학년 베트남 수학 여행 길라잡이</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+    @keyframes colorChange {
+      0%   { color: #4f46e5; }
+      25%  { color: #21e6c1; }
+      50%  { color: #ff6a3d; }
+      75%  { color: #fbbf24; }
+      100% { color: #4f46e5; }
+    }
+    .color-animate {
+      animation: colorChange 2.5s infinite linear;
+    }
+    .hide-navbar {
+      transform: translateY(-100%);
+      transition: transform 0.3s;
+    }
+    nav {
+      transition: transform 0.3s;
+    }
+    </style>
+</head>
+<body class="bg-indigo-50 text-stone-800">
+
+    <header class="relative w-full bg-indigo-700 shadow-md">
+        <div class="header-image-container">
+            <img src="https://vietnamguide.co.kr/wp-content/uploads/2018/12/%EB%8B%A4%EB%82%AD-%EB%B0%94%EB%82%98%ED%9E%90-900x506.jpg" alt="[Image of 베트남 골든 브릿지 배경의 2025학년도 KIS 8학년 베트남 수학 여행 길라잡이]" class="header-image w-full h-auto max-h-56 md:max-h-96 object-cover">
+            <div class="header-text-overlay" id="typing-header"></div>
+        </div>
+    </header>
+
+    <nav class="bg-white/80 backdrop-blur shadow-xl sticky top-0 z-50 transition-transform duration-300">
+        <div class="container mx-auto flex flex-wrap justify-center space-x-1 sm:space-x-2 md:space-x-4 lg:space-x-8 py-2 md:py-3 px-1 md:px-2">
+            <button class="tab-button text-xs sm:text-sm md:text-base lg:text-lg py-1 sm:py-2 px-1 sm:px-2 md:px-4 rounded-full text-indigo-800 hover:bg-indigo-100 hover:shadow-lg transition-all duration-200 active:border-b-4 active:border-indigo-500" onclick="showSection('overview')">개요</button>
+            <button class="tab-button text-xs sm:text-sm md:text-base lg:text-lg py-1 sm:py-2 px-1 sm:px-2 md:px-4 rounded-full text-indigo-800 hover:bg-indigo-100 hover:shadow-lg transition-all duration-200 active:border-b-4 active:border-indigo-500" onclick="showSection('itinerary')">세부일정</button>
+            <button class="tab-button text-xs sm:text-sm md:text-base lg:text-lg py-1 sm:py-2 px-1 sm:px-2 md:px-4 rounded-full text-indigo-800 hover:bg-indigo-100 hover:shadow-lg transition-all duration-200 active:border-b-4 active:border-indigo-500" onclick="showSection('packing')">준비물</button>
+            <button class="tab-button text-xs sm:text-sm md:text-base lg:text-lg py-1 sm:py-2 px-1 sm:px-2 md:px-4 rounded-full text-indigo-800 hover:bg-indigo-100 hover:shadow-lg transition-all duration-200 active:border-b-4 active:border-indigo-500" onclick="showSection('accommodation')">숙소안내</button>
+            <button class="tab-button text-xs sm:text-sm md:text-base lg:text-lg py-1 sm:py-2 px-1 sm:px-2 md:px-4 rounded-full text-indigo-800 hover:bg-indigo-100 hover:shadow-lg transition-all duration-200 active:border-b-4 active:border-indigo-500" onclick="showSection('meals')">식사</button>
+            <button class="tab-button text-xs sm:text-sm md:text-base lg:text-lg py-1 sm:py-2 px-1 sm:px-2 md:px-4 rounded-full text-indigo-800 hover:bg-indigo-100 hover:shadow-lg transition-all duration-200 active:border-b-4 active:border-indigo-500" onclick="showSection('attractions')">관광지</button>
+            <button class="tab-button text-xs sm:text-sm md:text-base lg:text-lg py-1 sm:py-2 px-1 sm:px-2 md:px-4 rounded-full text-indigo-800 hover:bg-indigo-100 hover:shadow-lg transition-all duration-200 active:border-b-4 active:border-indigo-500" onclick="showSection('safety-education')">안전교육</button>
+            <button class="tab-button text-xs sm:text-sm md:text-base lg:text-lg py-1 sm:py-2 px-1 sm:px-2 md:px-4 rounded-full text-indigo-800 hover:bg-indigo-100 hover:shadow-lg transition-all duration-200 active:border-b-4 active:border-indigo-500" onclick="showSection('hospital-facilities')">병원시설</button>
+            <button class="tab-button text-xs sm:text-sm md:text-base lg:text-lg py-1 sm:py-2 px-1 sm:px-2 md:px-4 rounded-full text-indigo-800 hover:bg-indigo-100 hover:shadow-lg transition-all duration-200 active:border-b-4 active:border-indigo-500" onclick="showSection('etc-info')">기타</button>
+        </div>
+    </nav>
+
+    <main class="container mx-auto p-2 sm:p-4 md:p-8">
+        <section id="overview" class="content-section active space-y-4 md:space-y-6">
+            <h2 class="text-xl md:text-2xl font-semibold text-indigo-700 border-b-2 border-indigo-400 pb-2">1. 현장 체험 학습 개요</h2>
+            <div class="bg-white p-3 md:p-6 rounded-lg shadow-lg">
+                <h3 class="text-xl font-semibold text-indigo-600 mb-2">목적</h3>
+                <p class="text-stone-700 leading-relaxed">베트남 주요 도시의 다양한 문화 체험을 통해 베트남의 지리적, 문화적, 역사적 특성을 실제 경험하고 민주 시민으로서의 공동체 의식을 함양하며, 현장의 살아있는 학습 자료가 실제 교과 활동으로 연계되어 학생들로 하여금 지덕체를 두루 갖춘 훌륭한 인재로 거듭날 수 있도록 함.</p>
+            </div>
+
+            <div class="bg-white p-3 md:p-6 rounded-lg shadow-lg">
+                <h3 class="text-xl font-semibold text-indigo-600 mb-2">운영 방침</h3>
+                <ul class="list-disc list-inside text-stone-700 space-y-1">
+                    <li>안전을 최우선으로 하고, 공중 도덕과 질서 의식을 고취한다.</li>
+                    <li>공동체 의식을 기르고, 자연 보호 운동에 솔선한다.</li>
+                    <li>효율적인 동선과 방문지 선택으로 최대한 경비를 절약하고, 무리 없는 일정으로 운영한다.</li>
+                    <li>부득이 잔류 학생이 발생할 시 별도의 계획을 수립하여 지도한다.</li>
+                </ul>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-6">
+                <div class="bg-white p-3 md:p-6 rounded-lg shadow-lg">
+                    <h3 class="text-xl font-semibold text-indigo-600 mb-2">기본 정보</h3>
+                    <ul class="text-stone-700 space-y-1">
+                        <li><strong>기간:</strong> 2025년 6월 4일 (수) ~ 6월 6일 (금) [2박 3일]</li>
+                        <li><strong>장소:</strong> 베트남 중부 지방 일대 (다낭, 호이안)</li>
+                        <li><strong>숙소:</strong> Muong Thanh Grand Da Nang Hotel</li>
+                        <li><strong>참여 인원:</strong> 학생 165명, 교사 7명, 보조교사 1명 총 173명</li>
+                    </ul>
+                </div>
+                <div class="bg-white p-3 md:p-6 rounded-lg shadow-lg">
+                    <h3 class="text-xl font-semibold text-indigo-600 mb-2">항공편</h3>
+                    <table class="w-full text-left text-sm text-stone-700">
+                        <thead class="bg-indigo-300 text-indigo-900">
+                            <tr>
+                                <th class="p-2 rounded-tl-md">일자</th>
+                                <th class="p-2">구간</th>
+                                <th class="p-2">항공편</th>
+                                <th class="p-2 rounded-tr-md">시간</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="border-b border-indigo-200">
+                                <td class="p-2">6/4 (수)</td>
+                                <td class="p-2">호치민 → 다낭</td>
+                                <td class="p-2">VN112/VN7108</td>
+                                <td class="p-2">08:00-09:25/09:00-10:25</td>
+                            </tr>
+                            <tr>
+                                <td class="p-2">6/6 (금)</td>
+                                <td class="p-2">다낭 → 호치민</td>
+                                <td class="p-2">VN137/VN141</td>
+                                <td class="p-2">18:00-19:30/18:40-20:10</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p class="text-xs text-stone-500 mt-1">*귀국 항공편은 3일차 세부일정의 정보를 기준으로 합니다.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="itinerary" class="content-section space-y-6">
+            <h2 class="text-2xl font-semibold text-indigo-700 border-b-2 border-indigo-400 pb-2">2. 세부 일정</h2>
+            <div class="flex justify-center space-x-2 sm:space-x-4 mb-6">
+                <button class="iti-button bg-indigo-500 hover:bg-indigo-700 text-white font-semibold py-2 px-4 rounded-lg shadow transition-colors duration-300 active" onclick="showItineraryDay('day1')">1일차</button>
+                <button class="iti-button bg-indigo-500 hover:bg-indigo-700 text-white font-semibold py-2 px-4 rounded-lg shadow transition-colors duration-300" onclick="showItineraryDay('day2')">2일차</button>
+                <button class="iti-button bg-indigo-500 hover:bg-indigo-700 text-white font-semibold py-2 px-4 rounded-lg shadow transition-colors duration-300" onclick="showItineraryDay('day3')">3일차</button>
+            </div>
+
+            <div id="day1" class="iti-content active bg-white p-6 rounded-lg shadow-lg overflow-x-auto">
+                <h3 class="text-xl font-bold text-indigo-600 mb-4">1일차 - 6월 4일 (수): 다낭 / 호이안</h3>
+                <table class="w-full text-left text-base text-stone-700 rounded-lg overflow-hidden itinerary-table">
+                    <thead>
+                        <tr>
+                            <th class="p-3">시간</th>
+                            <th class="p-3">일정</th>
+                            <th class="p-3 w-auto whitespace-nowrap">비고</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>05:00</td>
+                            <td>학교 집결 및 버스 출발</td>
+                            <td>정시 출발</td>
+                        </tr>
+                        <tr>
+                            <td>08:00-09:25</td>
+                            <td>1,2반 호치민 → 다낭 항공 이동</td>
+                            <td>학생 68명(1,2반), 교사 4명, 보조교사 1명, 베트남 통역 1명, 수련지도사 4명</td>
+                        </tr>
+                        <tr>
+                            <td>09:00-10:25</td>
+                            <td>3,4,5반 호치민 → 다낭 항공 이동</td>
+                            <td>학생 97명(3,4,5반), 교사 3명</td>
+                        </tr>
+                        <tr>
+                            <td>10:25</td>
+                            <td>다낭 국제 공항 도착 및 수속</td>
+                            <td>가방 수령</td>
+                        </tr>
+                        <tr>
+                            <td>11:30-13:00</td>
+                            <td>중식 - 한식</td>
+                            <td>보쌈, 김치 전골, 밑반찬</td>
+                        </tr>
+                        <tr>
+                            <td>13:00-14:00</td>
+                            <td>참 조각 박물관 방문 후 호텔로 이동</td>
+                            <td>버스 이동</td>
+                        </tr>
+                        <tr>
+                            <td>14:00</td>
+                            <td>호텔 체크인</td>
+                            <td>Muong Thanh Grand Da Nang Hotel</td>
+                        </tr>
+                        <tr>
+                            <td>15:00-17:00</td>
+                            <td>공동체 놀이 및 실내 수련 활동</td>
+                            <td>호텔 내 컨퍼런스 룸</td>
+                        </tr>
+                        <tr>
+                            <td>17:00-21:00</td>
+                            <td>호이안에서 저녁 식사 및 구 시가지 관광</td>
+                            <td>모닝글로리 식당</td>
+                        </tr>
+                        <tr>
+                            <td>22:00</td>
+                            <td>호텔로 복귀 및 취침</td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div id="day2" class="iti-content bg-white p-6 rounded-lg shadow-lg overflow-x-auto">
+                <h3 class="text-xl font-bold text-indigo-600 mb-4">2일차 - 6월 5일 (목): 플로깅 / 영응사 / 하이 마을</h3>
+                <table class="w-full text-left text-base text-stone-700 rounded-lg overflow-hidden itinerary-table">
+                    <thead>
+                        <tr>
+                            <th class="p-3">시간</th>
+                            <th class="p-3">일정</th>
+                            <th class="p-3 w-auto whitespace-nowrap">비고</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>06:30-08:30</td>
+                            <td>기상 및 조식</td>
+                            <td>호텔 레스토랑</td>
+                        </tr>
+                        <tr>
+                            <td>09:00-10:00</td>
+                            <td>숙소 인근 해변에서 반별 플로깅 프로젝트</td>
+                            <td>미케 비치</td>
+                        </tr>
+                        <tr>
+                            <td>10:00-12:00</td>
+                            <td>호텔 복귀 후 모둠별 자율 활동</td>
+                            <td>호텔 내</td>
+                        </tr>
+                        <tr>
+                            <td>12:00-13:00</td>
+                            <td>식당으로 이동, 중식</td>
+                            <td>현지식</td>
+                        </tr>
+                        <tr>
+                            <td>13:00-17:00</td>
+                            <td>베트남 최대 불상인 영응사 관광, 하이 마을 위령비 방문</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>17:00-18:30</td>
+                            <td>저녁 식사 - 한식</td>
+                            <td>무제한 삼겹살, 찌개, 밑반찬</td>
+                        </tr>
+                        <tr>
+                            <td>18:30-22:00</td>
+                            <td>장기자랑 및 레크레이션</td>
+                            <td>호텔 내 컨퍼런스 룸</td>
+                        </tr>
+                        <tr>
+                            <td>22:00</td>
+                            <td>취침</td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div id="day3" class="iti-content bg-white p-6 rounded-lg shadow-lg overflow-x-auto">
+                <h3 class="text-xl font-bold text-indigo-600 mb-4">3일차 - 6월 6일 (금): 바나힐 / 귀국</h3>
+                <table class="w-full text-left text-base text-stone-700 rounded-lg overflow-hidden itinerary-table">
+                    <thead>
+                        <tr>
+                            <th class="p-3">시간</th>
+                            <th class="p-3">일정</th>
+                            <th class="p-3 w-auto whitespace-nowrap">비고</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>06:30-08:30</td>
+                            <td>기상 및 조식</td>
+                            <td>호텔 레스토랑</td>
+                        </tr>
+                        <tr>
+                            <td>09:00</td>
+                            <td>체크아웃 후 바나힐로 이동</td>
+                            <td>버스 이동</td>
+                        </tr>
+                        <tr>
+                            <td>10:00</td>
+                            <td>바나힐 - 골든 브릿지 도착</td>
+                            <td>케이블카 탑승</td>
+                        </tr>
+                        <tr>
+                            <td>10:00-11:50</td>
+                            <td>자유 시간</td>
+                            <td>11:50 집결지: 원형 피라미드</td>
+                        </tr>
+                        <tr>
+                            <td>12:00-13:00</td>
+                            <td>중식</td>
+                            <td>포시즌스 뷔페</td>
+                        </tr>
+                        <tr>
+                            <td>13:00-14:30</td>
+                            <td>자유 시간</td>
+                            <td>14:30 집결지: 다이애나 상</td>
+                        </tr>
+                        <tr>
+                            <td>15:00</td>
+                            <td>버스 출발</td>
+                            <td>버스에서 저녁 간식 (햄버거 세트)</td>
+                        </tr>
+                        <tr>
+                            <td>16:00</td>
+                            <td>공항 도착 및 체크인</td>
+                            <td>다낭 국제 공항</td>
+                        </tr>
+                        <tr>
+                            <td>18:00-19:30</td>
+                            <td>1,2반, 3반 일부 다낭 → 호치민 항공 이동</td>
+                            <td>학생 80명(1,2반, 3반 12명), 교사 4명, 보조교사 1명, 수련지도사 4명, 베트남 통역 1명</td>
+                        </tr>
+                        <tr>
+                            <td>18:40-20:10</td>
+                            <td>3,4,5반 일부 다낭 → 호치민 항공 이동</td>
+                            <td>학생 85명(4,5반, 3반 21명), 교사 3명</td>
+                        </tr>
+                        <tr>
+                            <td>20:10</td>
+                            <td>도착 및 배정지별 지정으로 귀가 후 종료</td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section id="packing" class="content-section space-y-6">
+            <h2 class="text-2xl font-semibold text-indigo-700 border-b-2 border-indigo-400 pb-2">3. 준비물</h2>
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <h3 class="text-xl font-semibold text-indigo-600 mb-3">필수 서류</h3>
+                    <ul class="list-disc list-inside text-stone-700 space-y-1">
+                        <li>여권 (만료일 6개월 이상 확인)</li>
+                        <li>여권 사본 또는 베트남 ID (주민증) - 해당자</li>
+                    </ul>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <h3 class="text-xl font-semibold text-indigo-600 mb-3">가방</h3>
+                    <ul class="list-disc list-inside text-stone-700 space-y-1">
+                        <li>여행용 가방: 1인당 9kg 이내 소형 기내용 캐리어</li>
+                        <li>백팩 1개</li>
+                        <li>작은 크로스 가방</li>
+                        <li>기내용 캐리어 사이즈: 115cm (높이 56cm x 가로 36cm x 폭 23cm)</li>
+                    </ul>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <h3 class="text-xl font-semibold text-indigo-600 mb-3">의류</h3>
+                    <ul class="list-disc list-inside text-stone-700 space-y-1">
+                        <li>개인 여벌 옷 (학급 단체 티셔츠, 속옷, 양말 등)</li>
+                        <li>편안한 옷</li>
+                        <li>수영복 (호텔 수영장 이용 시, 수영모자 필요 없음)</li>
+                        <li>모자 (자외선 차단용, 햇볕 강함)</li>
+                        <li>신발 (야외 활동용 운동화 또는 크록스, 슬리퍼 착용 금지)</li>
+                        <li>얇은 긴 옷 (가디건 등, 에어컨 및 바나힐 기온 대비)</li>
+                    </ul>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <h3 class="text-xl font-semibold text-indigo-600 mb-3">기타 준비물</h3>
+                    <ul class="list-disc list-inside text-stone-700 space-y-1">
+                        <li>세면도구 (칫솔, 치약, 손수건 등 개인 용품)</li>
+                        <li>선크림, 물티슈, 여행용 티슈</li>
+                        <li>플로깅용 면장갑 또는 코팅 장갑</li>
+                        <li>1회용 여분 마스크, 개인 상비약</li>
+                        <li>작은 3단 우산 또는 양산 (선택)</li>
+                        <li>간단한 필기 도구 (볼펜, 메모지)</li>
+                        <li>충전기 (보조 배터리)</li>
+                        <li>개인 경비 (보관 철저)</li>
+                        <li><span class="text-sm text-sky-600">* 호텔 기본 제공: 비누, 샴푸, 바디워시, 칫솔, 치약, 수건</span></li>
+                        <li><span class="text-sm text-sky-600">* 개인 용품 이름 표기, 고가품 지참 자제</span></li>
+                        <li><span class="text-sm text-sky-600">* 간단한 간식 (밀봉된 것, 캐리어 공간 허용 시)</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="bg-red-100 border-l-4 border-red-600 text-red-800 p-6 rounded-lg shadow-lg mt-6">
+                <h3 class="text-xl font-semibold text-red-700 mb-3">🚨 금지 물품</h3>
+                <ul class="list-disc list-inside space-y-1">
+                    <li>마약류, 주류, 담배, 폭죽, 칼, 가스, 라이터, 성냥</li>
+                    <li>고가 물품 (노트북, 태블릿 등)</li>
+                    <li>화투, 카드 등 사행성 놀이 용품</li>
+                    <li>드라이기, 고데기 (호텔 비치됨)</li>
+                    <li>부피가 큰 물건 (배드민턴 라켓, 장우산 등)</li>
+                    <li>유리병, 날카로운 물건</li>
+                    <li>화재 위험 전열기구</li>
+                    <li>100ml 초과 액체류 (물, 향수, 화장품 등)</li>
+                    <li>문구용 칼, 가위, 눈썹 가위, 장난감 총 등</li>
+                </ul>
+                <p class="mt-3 text-sm font-semibold">※ 공항 검색대 적발 시 모두 압수 및 폐기됩니다.</p>
+            </div>
+        </section>
+
+        <section id="accommodation" class="content-section space-y-6">
+            <h2 class="text-2xl font-semibold text-indigo-700 border-b-2 border-indigo-400 pb-2">4. 숙소 안내</h2>
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+                <h3 class="text-xl font-bold text-indigo-600 mb-4">Muong Thanh Grand Da Nang Hotel (★★★★)</h3>
+                <div class="image-container">
+                    <div class="image-wrapper">
+                        <img src="https://granddanang.muongthanh.com/images/hotels/2023/07/07/original/muong-thanh-grand-dn_-138_1678258816_1687493079-1_1688713196.jpg" alt="[Image of Muong Thanh Grand Da Nang Hotel 수영장]">
+                    </div>
+                    <div class="image-wrapper">
+                        <img src="https://granddanang.muongthanh.com/images/hotels/2023/07/07/original/muong-thanh-grand-dn_-280_1678257239_1687493080_1688713197.jpg" alt="[Image of Muong Thanh Grand Da Nang Hotel 객실]">
+                    </div>
+                </div>
+                <div class="grid md:grid-cols-2 gap-6 mt-6">
+                    <div>
+                        <h4 class="text-lg font-semibold text-indigo-600 mb-2">호텔 정보</h4>
+                        <ul class="text-stone-700 space-y-1">
+                            <li><strong>주소:</strong> 962 Ngo Quyen Street, Son Tra District, Da Nang, Vietnam</li>
+                            <li><strong>전화번호:</strong> +84 236 3929 929</li>
+                            <li><strong>홈페이지:</strong> <a href="https://granddanang.muongthanh.com/" target="_blank" class="text-sky-600 hover:underline">granddanang.muongthanh.com</a></li>
+                            <li><strong>등급:</strong> 4성급 호텔 (높은 품질의 서비스와 시설 제공)</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="text-lg font-semibold text-indigo-600 mb-2">객실 배정 (2인 1실 기준)</h4>
+                        <ul class="list-disc list-inside text-stone-700 space-y-1">
+                            <li>고급 침구류, 편안한 침대</li>
+                            <li>에어컨 및 개별 온도 조절</li>
+                            <li>고속 무료 Wi-Fi</li>
+                            <li>평면 스마트 TV</li>
+                            <li>미니 냉장고, 전기 주전자</li>
+                            <li>목욕 가운, 슬리퍼</li>
+                            <li>고급 욕실 용품, 헤어 드라이어</li>
+                            <li>디지털 개인 금고, 책상, 의자</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="mt-6">
+                     <h4 class="text-lg font-semibold text-indigo-600 mb-2">호텔 시설 및 서비스</h4>
+                     <div class="flex flex-wrap gap-4 text-stone-700">
+                        <span class="bg-purple-100 text-purple-700 px-3 py-1 rounded-full text-sm">수영장</span>
+                        <span class="bg-purple-100 text-purple-700 px-3 py-1 rounded-full text-sm">피트니스 센터</span>
+                        <span class="bg-purple-100 text-purple-700 px-3 py-1 rounded-full text-sm">레스토랑</span>
+                        <span class="bg-purple-100 text-purple-700 px-3 py-1 rounded-full text-sm">무료 Wi-Fi</span>
+                        <span class="bg-purple-100 text-purple-700 px-3 py-1 rounded-full text-sm">24시간 데스크</span>
+                        <span class="bg-purple-100 text-purple-700 px-3 py-1 rounded-full text-sm">컨퍼런스 룸</span>
+                     </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="meals" class="content-section space-y-6">
+            <h2 class="text-2xl font-semibold text-indigo-700 border-b-2 border-indigo-400 pb-2">5. 식사</h2>
+            <p class="text-stone-700 leading-relaxed mb-4">수학여행 기간 동안 제공되는 식사 메뉴입니다. 각 일차별 식당과 상세 메뉴를 확인해보세요.</p>
+
+            <div class="flex justify-center space-x-2 sm:space-x-4 mb-6">
+                <button class="iti-button bg-indigo-500 hover:bg-indigo-700 text-white font-semibold py-2 px-4 rounded-lg shadow transition-colors duration-300 active" onclick="showMealDay('meal-day1')">1일차</button>
+                <button class="iti-button bg-indigo-500 hover:bg-indigo-700 text-white font-semibold py-2 px-4 rounded-lg shadow transition-colors duration-300" onclick="showMealDay('meal-day2')">2일차</button>
+                <button class="iti-button bg-indigo-500 hover:bg-indigo-700 text-white font-semibold py-2 px-4 rounded-lg shadow transition-colors duration-300" onclick="showMealDay('meal-day3')">3일차</button>
+            </div>
+
+            <div id="meal-day1" class="meal-content active bg-white p-6 rounded-lg shadow-lg overflow-x-auto">
+                <h3 class="text-xl font-bold text-indigo-600 mb-4">1일차 식사</h3>
+                <table class="w-full text-left text-base text-stone-700 rounded-lg overflow-hidden meal-table">
+                    <thead>
+                        <tr>
+                            <th class="p-3">일차</th>
+                            <th class="p-3">식당명</th>
+                            <th class="p-3">상세 메뉴</th>
+                            <th class="p-3">사진</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>중식</td>
+                            <td>장원 (한식)</td>
+                            <td>노니 보쌈<br>김치 전골<br>밑반찬<br>밥<br>인당 콜라 제공</td>
+                            <td class="align-top pl-3 p-0" style="vertical-align: top; padding: 0;">
+                                <div class="image-container flex justify-start items-start h-full" style="padding: 0; margin: 0;">
+                                    <div class="image-wrapper meal-image" style="width: 100%; height: auto; max-width: 200px; margin: 0.5rem 0; padding: 0; display: block;">
+                                        <img src="firstlunch.png" alt="[Image of 장원 중식]" style="width: 100%; height: 100%; object-fit: cover; border-radius: 0.75rem; display: block; margin: 0; padding: 0;">
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>석식</td>
+                            <td>모닝 글로리 (현지식)</td>
+                            <td>녹두가 들어간 찹쌀 만두<br>호이안 스타일 바임세오<br>게살 소스가 곁들여진 튀긴 완탕<br>돼지 고기 BBQ 구이와 라이스 페이퍼<br>새우, 고기 프레쉬 스프링 롤<br>두부, 다진 고기 스프<br>야채 볶음<br>마늘 볶음밥</td>
+                            <td class="align-middle pl-3 p-0" style="vertical-align: middle; padding: 0;">
+                                <div class="image-container flex justify-center items-center h-full" style="height: 100%; min-height: 120px;">
+                                    <div class="image-wrapper meal-image" style="width: 100%; height: auto; max-width: 200px;">
+                                        <img src="moning.png" alt="[Image of 모닝 글로리 석식]" style="width: 100%; height: 100%; object-fit: cover; border-radius: 0.75rem; display: block; margin: 0; padding: 0;">
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div id="meal-day2" class="meal-content bg-white p-6 rounded-lg shadow-lg overflow-x-auto">
+                <h3 class="text-xl font-bold text-indigo-600 mb-4">2일차 식사</h3>
+                <table class="w-full text-left text-base text-stone-700 rounded-lg overflow-hidden meal-table">
+                    <thead>
+                        <tr>
+                            <th class="p-3">일차</th>
+                            <th class="p-3">식당명</th>
+                            <th class="p-3">상세 메뉴</th>
+                            <th class="p-3">사진</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>중식</td>
+                            <td>응온 티호아 (현지식)</td>
+                            <td>분 짜<br>바잉세오<br>야채 볶음<br>해산물 볶음밥<br>꿀 바른 닭 날개 볶음<br>새우 튀김<br>오징어 튀김<br>꼬치 구이와 라이스 페이퍼</td>
+                            <td class="align-middle pl-3 p-0" style="vertical-align: middle; padding: 0;">
+                                <div class="image-container flex justify-center items-center h-full" style="height: 100%; min-height: 120px; align-items: center;">
+                                    <div class="image-wrapper meal-image" style="width: 100%; height: auto; max-width: 200px;">
+                                        <img src="hyunji.png" alt="[Image of 2일차 중식]" style="width: 100%; height: 100%; object-fit: cover; border-radius: 0.75rem; display: block; margin: 0; padding: 0;">
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>석식</td>
+                            <td>르 가든 (한식)</td>
+                            <td>무제한 삼겹살<br>밑반찬<br>밥<br>인당 콜라 제공</td>
+                            <td class="align-middle pl-3 p-0" style="vertical-align: middle; padding: 0;">
+                                <div class="image-container flex justify-center items-center h-full" style="height: 100%; min-height: 120px;">
+                                    <div class="image-wrapper meal-image" style="width: 100%; height: auto; max-width: 200px;">
+                                        <img src="garden.png" alt="[Image of 2일차 석식]" style="width: 100%; height: 100%; object-fit: cover; border-radius: 0.75rem; display: block; margin: 0; padding: 0;">
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div id="meal-day3" class="meal-content bg-white p-6 rounded-lg shadow-lg overflow-x-auto">
+                <h3 class="text-xl font-bold text-indigo-600 mb-4">3일차 식사</h3>
+                <table class="w-full text-left text-base text-stone-700 rounded-lg overflow-hidden meal-table">
+                    <thead>
+                        <tr>
+                            <th class="p-3">일차</th>
+                            <th class="p-3">식당명</th>
+                            <th class="p-3">상세 메뉴</th>
+                            <th class="p-3">사진</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>중식</td>
+                            <td>포시즌 (뷔페)</td>
+                            <td>약 50가지 인터네셔날 뷔페</td>
+                            <td class="align-top pl-3 p-0" style="vertical-align: top; padding: 0;">
+                                <div class="image-container flex justify-start items-start h-full" style="padding: 0; margin: 0;">
+                                    <div class="image-wrapper meal-image" style="width: 100%; height: auto; max-width: 200px; margin: 0.5rem 0; padding: 0; display: block;">
+                                        <img src="fourseason.png" alt="[Image of 3일차 중식]" style="width: 100%; height: 100%; object-fit: cover; border-radius: 0.75rem; display: block; margin: 0; padding: 0;">
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>간이식</td>
+                            <td>롯데리아 (햄버거 세트)</td>
+                            <td>더블 더블 버거<br>치킨 너겟<br>쉐이크<br>콜라</td>
+                            <td class="align-top pl-3 p-0" style="vertical-align: top; padding: 0;">
+                                <div class="image-container flex justify-start items-start h-full" style="padding: 0; margin: 0;">
+                                    <div class="image-wrapper meal-image" style="width: 100%; height: auto; max-width: 200px; margin: 0.5rem 0; padding: 0; display: block;">
+                                        <img src="burger.png" alt="[Image of 3일차 간이식]" style="width: 100%; height: 100%; object-fit: cover; border-radius: 0.75rem; display: block; margin: 0; padding: 0;">
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section id="attractions" class="content-section space-y-6">
+            <h2 class="text-2xl font-semibold text-indigo-700 border-b-2 border-indigo-400 pb-2">6. 주요 관광지</h2>
+            <p class="text-stone-700 leading-relaxed mb-4">베트남 현장 체험 학습에서 방문하게 될 주요 관광지들을 소개합니다. 각 장소의 개요, 역사적 배경, 그리고 주요 볼거리들을 확인해보세요.</p>
+
+            <div class="bg-white p-4 rounded-lg shadow-lg space-y-4">
+                <div class="attraction-item">
+                    <div class="attraction-header" onclick="toggleAttractionDetail('cham-museum')">
+                        <h3 class="text-lg font-bold">참 조각 박물관 (Cham Sculpture Museum)</h3>
+                        <span class="toggle-icon text-xl">+</span>
+                    </div>
+                    <div id="cham-museum" class="attraction-content space-y-3 text-stone-700">
+                        <h4 class="font-semibold text-indigo-600">개요</h4>
+                        <p>참 조각 박물관은 베트남 다낭에 위치한 박물관으로, 고대 참파 왕국의 예술품과 유물들을 소장하고 있습니다. 1915년에 프랑스 식민 정부에 의해 설립되었으며, 참파 문화의 독특한 예술 양식을 보여주는 중요한 장소입니다.</p>
+                        <div class="image-container">
+                            <div class="image-wrapper">
+                                <img src="museon_1.png" alt="[Image of 참 조각 박물관 이미지 1]">
+                            </div>
+                            <div class="image-wrapper">
+                                <img src="https://furamavietnam.com/wp-content/uploads/2024/11/Furama-Resort-Danang-Sightseeing-Cham-Sculpture-Museum-5.jpg" alt="[Image of 참 조각 박물관 이미지 2]">
+                            </div>
+                        </div>
+                        <h4 class="font-semibold text-indigo-600">역사적 배경</h4>
+                        <p>참파 왕국은 2세기부터 15세기까지 베트남 중남부 지역에 존재했던 고대 왕국입니다. 이 박물관은 참파 예술의 중심지였던 미선 유적지 등에서 발굴된 조각상들을 보존하고 전시하기 위해 지어졌습니다. 프랑스 극동 연구소(EFEO)의 학자들이 주도하여 건설되었으며, 참파 예술 연구의 중요한 거점이 되었습니다.</p>
+                        <h4 class="font-semibold text-indigo-600">방문 시 유의 사항</h4>
+                        <p>박물관 내부에서는 유물 보호를 위해 플래시 촬영이 금지됩니다. 조용하고 경건한 분위기를 유지하며 유물들을 감상하는 것이 중요합니다. 박물관은 다낭 시내 중심부에 위치하여 접근성이 좋습니다.</p>
+                    </div>
+                </div>
+
+                <div class="attraction-item">
+                    <div class="attraction-header" onclick="toggleAttractionDetail('linh-ung')">
+                        <h3 class="text-lg font-bold">영응사 (靈應寺, 린응사) - 다낭의 웅장한 해수 관음상</h3>
+                        <span class="toggle-icon text-xl">+</span>
+                    </div>
+                    <div id="linh-ung" class="attraction-content space-y-3 text-stone-700">
+                        <h4 class="font-semibold text-indigo-600">개요</h4>
+                        <p>영응사(베트남어: Chùa Linh Ứng, 쭈어 린응)는 베트남 다낭 시내에서 약 10km 떨어진 손 짜(Son Tra) 반도의 바이 붓이라는 곳에 위치한 불교 사찰입니다. 특히 이곳은 67m 높이의 동아시아에서 가장 큰 해수 관음상이 있는 곳으로 유명합니다. 다낭에는 총 3개의 영응사가 있으며, 그 중 손 짜 산에 있는 영음사가 가장 최근에 지어졌고 규모도 가장 큽니다.</p>
+                        <div class="image-container">
+                            <div class="image-wrapper">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7GwJk0tVQFFLbU3s4bV06PnKtw0QMn205Qw&s" alt="[Image of 영응사 해수 관음상 이미지 1]">
+                            </div>
+                            <div class="image-wrapper">
+                                <img src="https://tankhang.vn/wp-content/uploads/2024/04/chua-linh-ung-da-nang-1.jpg" alt="[Image of 영응사 해수 관음상 이미지 2]">
+                            </div>
+                        </div>
+                        <h4 class="font-semibold text-indigo-600">역사적 배경</h4>
+                        <p>영응사는 틱 티엔 응우옌(Thich Thien Nguyen) 스님(1945-2016)이 세웠으며, 2004년 7월 공사를 시작하여 2010년에 완공되었습니다. 영응사라는 이름은 '영험하게 응답해 준다'는 의미를 담고 있으며, 해수 관음상은 바다를 향해 서 있어 다낭시와 주변 어부들을 보호하는 수호신 역할을 한다고 믿어집니다.</p>
+                        <h4 class="font-semibold text-indigo-600">주요 특징</h4>
+                        <ul class="list-disc list-inside space-y-1">
+                            <li><strong>해수 관음상:</strong> 높이 67m로 아파트 30층에 해당하는 높이를 자랑합니다. 베트남에서 가장 큰 불상 중 하나입니다.</li>
+                            <li><strong>전망대:</strong> 사찰에서는 다낭 시내와 미케 해변이 한눈에 들어오는 탁월한 전망을 즐길 수 있습니다.</li>
+                            <li><strong>다낭의 3개 영웅응사:</strong> 손 짜 산, 오행산, 바나산에 각각 영응사가 있으며, 이 중 손 짜 산의 영웅사가 가장 규모가 크고 유명합니다.</li>
+                            <li><strong>사찰 건축:</strong> 베트남 전통 불교 건축 양식으로 지어졌으며, 화려한 색감과 정교한 장식이 특징입니다.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="attraction-item">
+                    <div class="attraction-header" onclick="toggleAttractionDetail('ha-my')">
+                        <h3 class="text-lg font-bold">하미 마을 위령비</h3>
+                        <span class="toggle-icon text-xl">+</span>
+                    </div>
+                    <div id="ha-my" class="attraction-content space-y-3 text-stone-700">
+                        <h4 class="font-semibold text-indigo-600">개요</h4>
+                        <p>하미 마을 위령비는 1968년 2월 22일 발생한 하미 마을 사건을 기억하기 위한 장소입니다. 베트남 전 당시 발생한 비극적인 사건을 기억하고 희생자들을 추모하는 곳으로, 다낭에서 가까운 꽝남성 디엔반현에 위치해 있습니다.</p>
+                        <div class="image-container">
+                            <div class="image-wrapper">
+                                <img src="https://image.aladin.co.kr/Community/paper/2021/0402/pimg_7597791612898828.jpg" alt="">
+                            </div>
+                            <div class="image-wrapper">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOORCm35H28TfqP3Ub8xMz9r90ue5UHfkKG2P6pHVGZyYmeAg6tH-EBFbZDZYZscPGcaY&usqp=CAU" alt="[Image of 하이 마을 위령비 이미지 2]">
+                            </div>
+                        </div>
+                        <h4 class="font-semibold text-indigo-600">역사적 의미</h4>
+                        <p>1157㎡(400여평)에 이르는 하미 마을 위령비 부지는 베트남 정부가 2011년 1월 국가적으로 지정한 역사 유적입니다. 위령비 전면에는 희생자 135명의 이름과 나이가 적혀 있습니다. 2000년 12월 월남 참전 전우 복지회는 하미 마을에 3만 달러를 기부하며 위령비를 세울 수 있게 해 주었습니다.</p>
+                        <h4 class="font-semibold text-indigo-600">방문 시 유의 사항</h4>
+                        <p>하미 마을은 한국인들이 많이 찾는 관광지 다낭에서 차로 20분 거리에 위치해 있습니다. 이곳을 방문할 때는 역사적 의미를 이해하고 침묵과 존경의 태도를 가지는 것이 중요합니다. 과거의 아픔을 성찰하고 평화의 중요성을 되새기는 시간으로 삼아야 합니다.</p>
+                    </div>
+                </div>
+
+                <div class="attraction-item">
+                    <div class="attraction-header" onclick="toggleAttractionDetail('hoi-an')">
+                        <h3 class="text-lg font-bold">호이안 올드 타운 - 유네스코 세계 문화 유산</h3>
+                        <span class="toggle-icon text-xl">+</span>
+                    </div>
+                    <div id="hoi-an" class="attraction-content space-y-3 text-stone-700">
+                        <h4 class="font-semibold text-indigo-600">개요</h4>
+                        <p>호이안 올드 타운은 베트남 꽝남성의 해안 평야 투본 강 하류에 위치한 고대 도시로, 다낭에서 남쪽으로 약 30km 떨어진 곳에 있습니다. 1999년 유네스코 세계 문화 유산으로 등재된 이곳은 15세기부터 19세기까지 번창했던 국제 무역항의 흔적을 그대로 간직하고 있어, 베트남에서 가장 잘 보존된 역사적인 도시 중 하나입니다.</p>
+                        <div class="image-container">
+                            <div class="image-wrapper">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRe35qmZOfp7SkeF9pnHVKfiOr02HTzQNHkqg&s" alt="[Image of 호이안 올드 타운 이미지 1]">
+                            </div>
+                            <div class="image-wrapper">
+                                <img src="https://product.monkeytravel.com/1076767375/2819ff3aa2321ef20865cdf59e39964d.jpg_3.jpg" alt="[Image of 호이안 올드 타운 이미지 2]">
+                            </div>
+                        </div>
+                        <h4 class="font-semibold text-indigo-600">역사적 배경</h4>
+                        <p>호이안은 15세기부터 동서양 무역항의 중심 무대로 기능했으며, 특히 17~18세기에는 중국, 일본, 네덜란드, 포르투갈 등 다양한 국가의 상인들이 오가는 국제 무역의 중심지였습니다. 당시 건설된 가옥, 사원, 교량 등이 오늘날까지 잘 보존되어 있어 과거 무역항의 번영을 생생하게 보여줍니다.</p>
+                        <h4 class="font-semibold text-indigo-600">주요 볼거리</h4>
+                        <ul class="list-disc list-inside space-y-1">
+                            <li><strong>내원교 (Japanese Covered Bridge):</strong> 호이안을 대표하는 랜드마크로, 17세기 일본인들이 건설한 아름다운 다리입니다.</li>
+                            <li><strong>풍흥의 집 (Phung Hung House):</strong> 19세기 무역상 풍흥이 지은 집으로, 베트남 전통 가옥의 구조를 잘 보여줍니다.</li>
+                            <li><strong>턴키의 집 (Tan Ky House):</strong> 약 200년 된 가옥으로, 중국, 일본, 베트남 건축 양식이 혼합되어 있습니다.</li>
+                            <li><strong>복건 회관 (Assembly Hall of Fujian Chinese):</strong> 호이안 올드 타운에서 가장 큰 중국인 회관으로 화려한 장식이 특징입니다.</li>
+                            <li><strong>투본 강과 소원 등:</strong> 밤이 되면 강물 위에 형형색색의 소원 등을 띄우는 전통이 있으며, 이는 호이안의 대표적인 야경 명소입니다.</li>
+                            <li><strong>야시장:</strong> 해질 무렵 열리는 야시장에서는 지역 특산품부터 기념품까지 다양 한 물건을 구경하고 구매할 수 있습니다.</li>
+                        </ul>
+                        <h4 class="font-semibold text-indigo-600 mt-4">동선 소개</h4>
+                        <div class="image-container three-cols">
+                            <div class="image-wrapper" style="max-width: 30%;">
+                                <img src="glory.png" alt="[Image of 모닝글로리에서 식사]">
+                                <p class="text-center text-base text-stone-600 mt-1">모닝글로리에서 식사</p>
+                            </div>
+                            <div class="image-wrapper" style="max-width: 30%;">
+                                <img src="freetime.png" alt="[Image of 자유관광]">
+                                <p class="text-center text-base text-stone-600 mt-1">자유관광</p>
+                            </div>
+                            <div class="image-wrapper" style="max-width: 30%;">
+                                <img src="place.png" alt="[Image of 큰 공터에서 집합]">
+                                <p class="text-center text-base text-stone-600 mt-1">큰 공터에서 집합</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="attraction-item">
+                    <div class="attraction-header" onclick="toggleAttractionDetail('ba-na-hills')">
+                        <h3 class="text-lg font-bold">바나힐 (Ba Na Hills) - 구름 위의 프랑스 마을과 골든 브릿지</h3>
+                        <span class="toggle-icon text-xl">+</span>
+                    </div>
+                    <div id="ba-na-hills" class="attraction-content space-y-3 text-stone-700">
+                        <h4 class="font-semibold text-indigo-600">개요</h4>
+                        <p>바나힐은 베트남 다낭시 서쪽의 안남 산맥에 위치한 고산 리조트이자 테마 파크로, 해발 약 1,487m 높이에 자리하고 있습니다. 2009년에 현재의 형태로 개장한 이곳은 프랑스 식민지 시대의 건축물을 재현한 '프렌치 빌리지', 세계적으로 유명한 '골든 브릿지', 그리고 세계에서 두 번째로 긴 케이블카로 유명합니다. 현재는 선월드 바나힐(Sun World Ba Na Hills)이라는 종합 리조트로 운영되고 있습니다.</p>
+                        <div class="image-container">
+                            <div class="image-wrapper">
+                                <img src="https://blog-static.kkday.com/ko/blog/wp-content/uploads/vietnam_danang_bana_hill_golden_bridge_1.jpg" alt="[Image of 바나힐 골든 브릿지 이미지 1]">
+                            </div>
+                            <div class="image-wrapper">
+                                <img src="https://media.triple.guide/triple-cms/c_limit,f_auto,h_1024,w_1024/64f9a433-ac9f-4732-ad30-2e7fde39df9c.jpeg" alt="[Image of 바나힐 이미지 2]">
+                            </div>
+                        </div>
+                        <h4 class="font-semibold text-indigo-600">역사적 배경</h4>
+                        <p>바나힐은 1919년 프랑스 식민지 시대에 처음 개발되었습니다. 당시 프랑스인들은 이곳의 시원한 기후를 즐기기 위해 휴양지로 조성했으며, 여러 빌라와 리조트를 건설했습니다. 베트남 전쟁 이후 이 지역은 버려졌다가, 2000년대 들어 관광지로 재개발되었습니다. 특히 2018년에 완공된 골든 브릿지(Golden Bridge)는 두 개의 거대한 석조 손이 다리를 떠받치는 독특한 디자인으로 전 세계적인 관심을 끌며 바나힐의 상징이 되었습니다.</p>
+                        <h4 class="font-semibold text-indigo-600">주요 볼거리</h4>
+                        <ul class="list-disc list-inside space-y-1">
+                            <li><strong>골든 브릿지 (Golden Bridge):</strong> 150m 길이의 다리로, 거대한 두 손이 다리를 받치고 있는 모습이 인상적입니다. 푸른 산과 구름이 어우러진 풍경이 장관을 이룹니다.</li>
+                            <li><strong>케이블카:</strong> 세계에서 두 번째로 긴 논스톱 단선 케이블카로, 5.8km 거리를 약 20분 만에 오르내리며 장관을 감상할 수 있습니다.</li>
+                            <li><strong>프렌치 빌리지 (French Village):</strong> 프랑스의 중세 건축물을 재현한 마을로, 고딕 양식의 성당, 광장, 와인 저장고 등 유럽의 분위기를 느낄 수 있습니다.</li>
+                            <li><strong>판타지 파크:</strong> 다양 한 놀이 기구와 게임을 즐길 수 있는 실내 테마 파크입니다.</li>
+                            <li><strong>꽃 정원 (Le Jardin D'Amour):</strong> 9개의 서로 다른 테마로 구성된 아름다운 정원입니다.</li>
+                            <li><strong>링응 사원 (Linh Ung Pagoda):</strong> 산 정상에 위치한 불교 사찰로, 다낭의 또 다른 영응사입니다.</li>
+                            <li><strong>루지 (Alpine Coaster):</strong> 산을 내려오며 즐기는 롤러 코스터형 놀이 기구입니다.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="attraction-item">
+                    <div class="attraction-header" onclick="toggleAttractionDetail('plogging')">
+                        <h3 class="text-lg font-bold">플로깅 활동</h3>
+                        <span class="toggle-icon text-xl">+</span>
+                    </div>
+                    <div id="plogging" class="attraction-content space-y-3 text-stone-700">
+                        <h4 class="font-semibold text-indigo-600">플로깅 (Plogging)이란?</h4>
+                        <p>플로깅(Plogging)은 스웨덴어 '플로카 우프(Plocka Upp · 이삭을 줍다)'와 영어 '조깅(Jogging)'의 합성어로, 걷거나 뛰면서 쓰레기를 줍는 환경 보호 활동입니다. 건강과 환경을 동시에 지키는 일석이조의 활동으로, 최근 전 세계적으로 인기를 얻고 있습니다.</p>
+                        <h4 class="font-semibold text-indigo-600">효과</h4>
+                        <ul class="list-disc list-inside space-y-1">
+                            <li>걷거나 달리면서 쓰레기를 주우므로 신체 건강에 도움</li>
+                            <li>쪼그려 앉고 일어서는 동작이 추가되어 일반 조깅보다 더 많은 칼로리 소모</li>
+                            <li>환경 보호에 직접 기여하는 보람을 느낄 수 있음</li>
+                            <li>공동체 의식과 환경 의식을 함께 함양할 수 있음</li>
+                        </ul>
+                        <h4 class="font-semibold text-indigo-600">다낭 미케비치 해변 플로깅 활동</h4>
+                        <p>수학 여행 2일차 오전에 다낭 미케 비치에서 반별로 플로깅 활동을 진행합니다. 모두가 함께 베트남 현지의 아름다운 해변을 깨끗하게 보존하는 데 기여하는 의미 있는 시간이 될 것입니다.</p>
+                        <div class="image-container">
+                            <div class="image-wrapper">
+                                <img src="beach_1.png" alt="[Image of 다낭 미케비치 1]">
+                            </div>
+                            <div class="image-wrapper">
+                                <img src="beach_2.png" alt="[Image of 다낭 미케비치 2]">
+                            </div>
+                        </div>
+                        <h5 class="font-semibold text-indigo-600 mt-2">준비물</h5>
+                        <ul class="list-disc list-inside space-y-1">
+                            <li>플로깅용 장갑: 면 장갑 또는 코팅 장갑</li>
+                            <li>쓰레기 봉투 (현장에서 제공)</li>
+                            <li>편안한 운동화</li>
+                            <li>자외선 차단제 및 모자</li>
+                            <li>물병</li>
+                        </ul>
+                        <h5 class="font-semibold text-indigo-600 mt-2">활동 시 주의 사항</h5>
+                        <ul class="list-disc list-inside space-y-1">
+                            <li>모둠별로 활동하고, 혼자 멀리 떨어지지 않기</li>
+                            <li>날카로운 물체 (깨진 유리, 금속 조각 등)는 직접 만지지 말고 교사에게 알리기</li>
+                            <li>플로깅 활동 후 반드시 손을 깨끗이 씻기</li>
+                            <li>쓰레기는 분리수거하여 정해진 장소에 모으기</li>
+                            <li>해변가에서 너무 깊이 들어가지 않기</li>
+                        </ul>
+                        <h4 class="font-semibold text-indigo-600">플로깅 활동 기대 효과</h4>
+                        <p>이번 플로깅 활동은 단순한 쓰레기 줍기가 아닌, 국제 학생으로서 방문 국가의 환경을 소중히 여기는 글로벌 시민 의식을 함양하는 기회가 될 것입니다. 또한 모둠 활동을 통해 협동심을 기르고, 지속 가능한 환경 보존의 중요성을 몸소 체험하게 될 것입니다.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="safety-education" class="content-section space-y-6">
+            <h2 class="text-2xl font-semibold text-indigo-700 border-b-2 border-indigo-400 pb-2">7. 안전 교육</h2>
+            <p class="text-stone-700 leading-relaxed mb-4">현장 체험 학습 기간 동안 학생들의 안전을 위한 주요 교육 내용입니다. 출발 전 준비 사항부터 현장 활동 시 주의사항, 그리고 특별 주의사항까지 꼼꼼히 확인하여 안전하고 즐거운 여행이 될 수 있도록 협조 부탁드립니다.</p>
+
+            <div class="bg-white p-4 rounded-lg shadow-lg space-y-4">
+                <div class="safety-item">
+                    <div class="safety-header" onclick="toggleSafetyDetail('pre-departure-safety')">
+                        <h3 class="text-lg font-bold">출발 전 안전 교육</h3>
+                        <span class="toggle-icon text-xl">+</span>
+                    </div>
+                    <div id="pre-departure-safety" class="safety-content space-y-3 text-stone-700">
+                        <h4 class="font-semibold text-indigo-600">출발 전</h4>
+                        <ul class="list-disc list-inside space-y-1">
+                            <li>방문지별 동선 확인, 사전 정보 파악</li>
+                            <li>준비물 체크</li>
+                            <li>개인 컨디션 관리</li>
+                        </ul>
+                        <h4 class="font-semibold text-indigo-600 mt-3">차량, 공항</h4>
+                        <ul class="list-disc list-inside space-y-1">
+                            <li>모든 일정 4~5인 모둠별 이동</li>
+                            <li>차량 승·하차 시 반별 2열로 질서 있게 탑승</li>
+                            <li>지정된 좌석에 앉으며, 안전 벨트 항상 착용하기</li>
+                            <li>인원 점검, 소지품 분실 주의</li>
+                        </ul>
+                        <h4 class="font-semibold text-indigo-600 mt-3">비행기</h4>
+                        <ul class="list-disc list-inside space-y-1">
+                            <li>단체 이탈이나 개인 행동 금지</li>
+                            <li>부득이한 경우 담임 선생님의 허락을 받아 동선을 알리고 재합류 확인</li>
+                            <li>이동 시 소란하지 않게 질서 정연하게 이동</li>
+                            <li>공공 장소에서 큰 소리로 떠들지 않기</li>
+                            <li>현지인과 문화에 대한 예의를 지키기</li>
+                        </ul>
+                        <h4 class="font-semibold text-indigo-600 mt-3">도난 예방</h4>
+                        <ul class="list-disc list-inside space-y-1">
+                            <li>필요한 경비 이외의 불필요한 귀중품은 지참하지 않음</li>
+                            <li>개인 소지품은 스스로 잘 관리하고 이름 표시</li>
+                            <li>남의 방에는 절대로 들어가지 않음</li>
+                            <li>부득이한 경우 지도 교사에게 맡기기</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="safety-item">
+                    <div class="safety-header" onclick="toggleSafetyDetail('on-site-safety')">
+                        <h3 class="text-lg font-bold">현장 안전 교육</h3>
+                        <span class="toggle-icon text-xl">+</span>
+                    </div>
+                    <div id="on-site-safety" class="safety-content space-y-3 text-stone-700">
+                        <h4 class="font-semibold text-indigo-600">문화 체험</h4>
+                        <ul class="list-disc list-inside space-y-1">
+                            <li>현지 문화와 관습 존중하기</li>
+                            <li>종교 시설 방문 시 복장과 행동에 주의</li>
+                            <li>사진 촬영 허용 구역 확인하기</li>
+                            <li>현지 음식 섭취 시 개인 알레르기 주의</li>
+                            <li>모르는 음식은 교사에게 확인 후 섭취</li>
+                        </ul>
+                        <h4 class="font-semibold text-indigo-600 mt-3">숙박 시설</h4>
+                        <ul class="list-disc list-inside space-y-1">
+                            <li>숙소 시설물 훼손 금지</li>
+                            <li>침대 위에서 뛰거나 장난치지 않기</li>
+                            <li>샤워실, 조명 사용 시 룸메이트와 서로 배려하기</li>
+                            <li>자기 방에서 취침하며 숙소 무단 이탈 금지</li>
+                            <li>취침 시간 이후 복도나 다른 방으로 이동 금지</li>
+                            <li>천장 스프링클러 절대 건드리지 않기</li>
+                            <li>본인 객실에서 가장 가까운 비상 대피로 숙지</li>
+                        </ul>
+                        <h4 class="font-semibold text-indigo-600 mt-3">식당</h4>
+                        <ul class="list-disc list-inside space-y-1">
+                            <li>식사 전 반드시 손을 깨끗이 씻기</li>
+                            <li>식당에서 제공하는 물 이외에는 음용하지 않기</li>
+                            <li>급하게 먹지 않고 음식 상태가 좋지 못할 경우 즉시 지도 교사에게 알림</li>
+                            <li>정해진 순서와 질서를 지키며 식당에서 장난치지 않기</li>
+                            <li>식당에서 제공된 음식을 포장하거나 따로 보관하지 않기</li>
+                            <li>뜨거운 음식에 주의하고 식당 종업원들에게 예의 있게 행동하기</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="safety-item">
+                    <div class="safety-header" onclick="toggleSafetyDetail('special-precautions')">
+                        <h3 class="text-lg font-bold">특별 주의 사항</h3>
+                        <span class="toggle-icon text-xl">+</span>
+                    </div>
+                    <div id="special-precautions" class="safety-content space-y-3 text-stone-700">
+                        <ul class="list-disc list-inside space-y-1">
+                            <li><strong>바닷가 수영 금지:</strong> 숙소 인근 해변 출입 시 절대 수영 금지 (이안류 사고 예방)</li>
+                            <li><strong>케이블카 이용 주의:</strong> 안내원의 지시를 따르고, 탑승 후 케이블카가 흔들리지 않도록 주의</li>
+                            <li><strong>놀이 기구 탑승 안전:</strong> 안전 요원의 지시에 따르고, 신체 조건과 컨디션을 고려하여 탑승</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="safety-item">
+                    <div class="safety-header" onclick="toggleSafetyDetail('sexual-harassment-prevention')">
+                        <h3 class="text-lg font-bold">성범죄 예방 교육</h3>
+                        <span class="toggle-icon text-xl">+</span>
+                    </div>
+                    <div id="sexual-harassment-prevention" class="safety-content space-y-3 text-stone-700">
+                        <ul class="list-disc list-inside space-y-1">
+                            <li>낯선 사람이 말을 걸 경우 자신의 의사를 분명히 전달하고 함부로 따라가지 않음</li>
+                            <li>공중 화장실 이용할 경우 혼자 가지 않고 친구들과 함께 이용</li>
+                            <li>인적 드문 곳이나 어두운 곳을 혼자 다니는 일 삼가고 조원들과 함께 다님</li>
+                            <li>숙소에서 이성 친구와 단둘이 있는 행동 하지 않음</li>
+                            <li>성범죄와 관련된 상황 발생한 경우 주저하거나 부끄러워하지 말고 적극적으로 선생님께 알림</li>
+                            <li>모르는 사람에게 휴대폰 번호 알려 주지 않으며, 모르는 사람 메시지나 대화 응하지 않음</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="hospital-facilities" class="content-section space-y-6">
+            <h2 class="text-2xl font-semibold text-indigo-700 border-b-2 border-indigo-400 pb-2">8. 병원 시설</h2>
+            <p class="text-stone-700 leading-relaxed mb-4">수학여행 중 발생할 수 있는 비상 상황에 대비하여 인근 병원 시설 및 긴급 연락처를 안내합니다. 비상 시 아래 정보를 참고하여 도움을 요청하세요.</p>
+
+            <div class="bg-white p-6 rounded-lg shadow-lg overflow-x-auto">
+                <h3 class="text-xl font-bold text-indigo-600 mb-4">긴급 연락처 및 병원 정보</h3>
+                <table class="w-full text-left text-base text-stone-700 rounded-lg overflow-hidden hospital-table">
+                    <thead>
+                        <tr>
+                            <th class="p-3">구분</th>
+                            <th class="p-3">내용</th>
+                            <th class="p-3">연락처</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="align-top py-3 pl-4">가이드 대표</td>
+                            <td class="align-top py-3">추후 제공</td>
+                            <td class="align-top py-3"></td>
+                        </tr>
+                        <tr>
+                            <td class="align-top py-3 pl-4">여행사 담당자</td>
+                            <td class="align-top py-3">김영남</td>
+                            <td class="align-top py-3">093-6041-996</td>
+                        </tr>
+                        <tr>
+                            <td class="align-top py-3 pl-4">여행사 대표</td>
+                            <td class="align-top py-3">Ms. Huong</td>
+                            <td class="align-top py-3">091-2103-792</td>
+                        </tr>
+                        <tr>
+                            <td class="align-middle py-3 pl-4">빈맥 국제 병원<br>(Vinmec International Hospital)</td>
+                            <td class="align-middle py-3">다낭 - 한국어 통역 가능</td>
+                            <td class="align-middle py-3">0236-3711-111</td>
+                        </tr>
+                        <tr>
+                            <td class="align-middle py-3 pl-4">패밀리 병원<br>(Family Hospital)</td>
+                            <td class="align-middle py-3">다낭 - 한국어 통역 가능</td>
+                            <td class="align-middle py-3">0236-363-2111</td>
+                        </tr>
+                        <tr>
+                            <td class="align-middle py-3 pl-4">퍼시픽 병원<br>(Pacific Hospital)</td>
+                            <td class="align-middle py-3">호이안 - 영어, 베트남어 소통 가능</td>
+                            <td class="align-middle py-3">0235-392-1656</td>
+                        </tr>
+                        <tr>
+                            <td class="align-top py-3 pl-4">대사관</td>
+                            <td class="align-top py-3"></td>
+                            <td class="align-top py-3">090-4026-126</td>
+                        </tr>
+                        <tr>
+                            <td class="align-top py-3 pl-4">영사 콜센터</td>
+                            <td class="align-top py-3"></td>
+                            <td class="align-top py-3">+82-2-3210-0404</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section id="etc-info" class="content-section space-y-6">
+            <h2 class="text-2xl font-semibold text-indigo-700 border-b-2 border-indigo-400 pb-2">9. 기타</h2>
+            <p class="text-stone-700 leading-relaxed mb-4">수학여행과 관련된 기타 정보입니다.</p>
+
+            <div class="other-info-item">
+                <div class="other-info-header" onclick="toggleOtherDetail('car-info')">
+                    <h3 class="text-lg font-bold">
+                        <i class="fas fa-bus"></i> 차량 정보
+                    </h3>
+                    <span class="toggle-icon text-xl">+</span>
+                </div>
+                <div id="car-info" class="other-info-content">
+                    <ul class="list-disc list-inside text-stone-700 space-y-1">
+                        <li><strong>호치민</strong><br><span class="ml-8">45인승 버스 5대</span></li>
+                        <li><strong>다낭</strong><br><span class="ml-8">45인승 버스 5대 + 7인승 (팔로우 차량)</span></li>
+                    </ul>
+                    <div class="image-container">
+                        <div class="image-wrapper">
+                            <img src="bus_1.png" alt="[Image of 버스 1]" class="w-full h-auto rounded-lg shadow-md">
+                        </div>
+                        <div class="image-wrapper">
+                            <img src="bus_2.png" alt="[Image of 버스 2]" class="w-full h-auto rounded-lg shadow-md">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="other-info-item mt-6">
+                <div class="other-info-header" onclick="toggleOtherDetail('guide-info')">
+                    <h3 class="text-lg font-bold">
+                        <i class="fas fa-user-tie"></i> 가이드 정보
+                    </h3>
+                    <span class="toggle-icon text-xl">+</span>
+                </div>
+                <div id="guide-info" class="other-info-content">
+                    <ul class="list-disc list-inside text-stone-700 space-y-1">
+                        <li><strong>호치민</strong></li>
+                        <ul class="list-circle list-inside ml-5">
+                            <li>호치민 -> 다낭 인솔 가이드: 한국어 베트남 가이드 1명</li>
+                            <li>호치민 -> 호치민 공항: 한국어 베트남 가이드 2명 / 영어 베트남 가이드 3명</li>
+                        </ul>
+                        <li><strong>다낭</strong></li>
+                        <ul class="list-circle list-inside ml-5">
+                            <li>총괄 인솔 가이드: 한국인 가이드</li>
+                            <li>2개 학급: 한국인 가이드 2명 + 보조 가이드 2명</li>
+                            <li>3개 학급: 한국어 베트남 가이드 3명</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="other-info-item mt-6">
+                <div class="other-info-header" onclick="toggleOtherDetail('travel-insurance-info')">
+                    <h3 class="text-lg font-bold">
+                        <i class="fas fa-file-medical-alt"></i> 여행자보험
+                    </h3>
+                    <span class="toggle-icon text-xl">+</span>
+                </div>
+                <div id="travel-insurance-info" class="other-info-content">
+                    <p class="text-stone-700 mb-4">학생 및 인솔자는 국적에 따라 아래와 같이 Bao Viet 여행자 보험에 가입됩니다. (보험사: Bao Viet Insurance)</p>
+                    <div class="overflow-x-auto bg-white rounded-lg shadow">
+                        <table class="w-full text-left text-sm text-stone-700 insurance-table">
+                            <thead class="bg-indigo-100">
+                                <tr>
+                                    <th class="p-3">구분</th>
+                                    <th class="p-3">1인당 가입금액</th>
+                                    <th class="p-3">보장항목</th>
+                                    <th class="p-3">상세 보장내역 (최대 금액)</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="nationality-cell p-3 border-r border-b" rowspan="5">베트남 국적<br>학생/인솔자</td>
+                                    <td class="p-3 border-r border-b" rowspan="5">135,000 VND / 3일<br>(총 보장금액: 300,000,000 VND)</td>
+                                    <td class="p-3 border-b">사고로 인한 사망/영구 전신 장애 (구조 활동 포함)</td>
+                                    <td class="p-3 border-b">보험 가입금액 전액 (300,000,000 VND)</td>
+                                </tr>
+                                <tr>
+                                    <td class="p-3 border-b">사고로 인한 영구 부분 장애 (구조 활동 포함)</td>
+                                    <td class="p-3 border-b">보험 가입금액 3천만 VND 이하: 별도 비율표에 따름<br>보험 가입금액 3천만 VND 초과: 실제 의료비 (별도 비율표 한도 내)</td>
+                                </tr>
+                                <tr>
+                                    <td class="p-3 border-b">여행 중 질병으로 인한 사망</td>
+                                    <td class="p-3 border-b">보험 가입금액의 50% (150,000,000 VND)</td>
+                                </tr>
+                                <tr>
+                                    <td class="p-3 border-b">원인 불명의 사망 (18-65세)</td>
+                                    <td class="p-3 border-b">보험 가입금액의 25% (75,000,000 VND)</td>
+                                </tr>
+                                <tr>
+                                    <td class="p-3 border-b">긴급 후송 비용</td>
+                                    <td class="p-3 border-b">보험 가입금액의 1% 한도 (3,000,000 VND) (항공 운송 제외)</td>
+                                </tr>
+                                <tr class="bg-indigo-50">
+                                    <td class="nationality-cell p-3 border-r" rowspan="4">한국 국적<br>학생/인솔자</td>
+                                    <td class="p-3 border-r" rowspan="4">239,000 VND<br>(DL2-B 플랜)</td>
+                                    <td class="p-3 border-b">의료비 (질병, 상해)</td>
+                                    <td class="p-3 border-b">최대 500,000,000 VND (입원/통원 치료 포함, 외래 치료 시 청구 건당 보험금의 0.1% 자기부담금)</td>
+                                </tr>
+                                <tr class="bg-indigo-50">
+                                    <td class="p-3 border-b">베트남 내 긴급 의료 후송</td>
+                                    <td class="p-3 border-b">최대 500,000,000 VND</td>
+                                </tr>
+                                <tr class="bg-indigo-50">
+                                    <td class="p-3 border-b">본국 송환 및 베트남 외 긴급 의료 후송</td>
+                                    <td class="p-3 border-b">최대 500,000,000 VND</td>
+                                </tr>
+                                <tr class="bg-indigo-50">
+                                    <td class="p-3">유해 본국 송환 또는 장례 비용</td>
+                                    <td class="p-3">최대 500,000,000 VND</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <div class="other-info-item mt-6">
+                <div class="other-info-header" onclick="toggleOtherDetail('guide-video')">
+                    <h3 class="text-lg font-bold">
+                        <i class="fas fa-video"></i> 수학여행 가이드 영상
+                    </h3>
+                    <span class="toggle-icon text-xl">+</span>
+                </div>
+                <div id="guide-video" class="other-info-content">
+                    <p class="text-stone-700 mb-4">2025학년도 KIS 8학년 수학여행 가이드 영상입니다.</p>
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/T45-xl3DLfE" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="text-center p-6 mt-8 bg-indigo-700 text-indigo-50 text-sm">
+        <div class="footer-content">
+            <img src="logo.png" alt="[Image of 학교 로고]" class="footer-logo">
+            <div class="footer-text-group">
+                <p class="mb-0">2025학년도 KIS 8학년 베트남 수학 여행</p>
+                <p class="mb-0">즐겁고 유익한 베트남 문화 체험 시간 되시길 바랍니다!</p>
+            </div>
+        </div>
+        <p class="mt-4 text-xs">ZIP CODE)72908, Address) 21 Tan Phu Street, Tan Phu Ward, District 7, Ho Chi Minh City, Vietnam 호치민시한국국제학교</p>
+        <p class="text-xs">Tel : (베트남)028-3780-1424 / (한국) +84-28-3780-1424 Fax : 84-28-3780-1229 E-mail : hcmcks@hanmail.net</p>
+        <p class="text-xs">Copyright 호치민시한국국제학교. All rights reserved.</p>
+    </footer>
+
+    <script src="main.js"></script>
+    <script>
+    window.addEventListener('DOMContentLoaded', () => {
+      // 타이핑 효과
+      const text = "2025학년도 KIS 8학년 베트남 수학 여행 길라잡이";
+      const target = document.getElementById('typing-header');
+      let i = 0;
+      function typing() {
+        if (i <= text.length) {
+          target.textContent = text.slice(0, i);
+          i++;
+          setTimeout(typing, 60);
+        } else {
+          // 타이핑이 끝나면 색상 애니메이션 클래스 추가
+          target.classList.add('color-animate');
+        }
+      }
+      typing();
+
+      // 네비게이션 자동 숨김/표시 기능
+      let lastScrollY = window.scrollY;
+      const navbar = document.querySelector('nav');
+      window.addEventListener('scroll', () => {
+        if (window.scrollY > lastScrollY) {
+          navbar.classList.add('hide-navbar');
+        } else {
+          navbar.classList.remove('hide-navbar');
+        }
+        lastScrollY = window.scrollY;
+      });
+    });
+    </script>
+</body>
+</html>

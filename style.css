@@ -1,0 +1,328 @@
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+.tab-button.active {
+    border-bottom-width: 4px;
+    border-color: #4f46e5; /* indigo-600 */
+    color: #4f46e5;
+    font-weight: 600;
+}
+
+.content-section {
+    display: none;
+}
+
+.content-section.active {
+    display: block;
+}
+
+.chart-container {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 300px;
+    max-height: 350px;
+}
+
+@media (min-width: 768px) {
+    .chart-container {
+        height: 350px;
+    }
+}
+
+.iti-button.active {
+    background-color: #4f46e5; /* indigo-600 */
+    color: white;
+}
+
+.iti-content {
+    display: none;
+}
+
+.iti-content.active {
+    display: block;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #eef2ff; /* indigo-50 */
+}
+
+::-webkit-scrollbar-thumb {
+    background: #818cf8; /* indigo-400 */
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #4f46e5; /* indigo-600 */
+}
+
+.attraction-header,
+.safety-header,
+.meal-header,
+.hospital-header,
+.other-info-header {
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #f3e8ff; /* purple-100 */
+    border-radius: 0.5rem;
+    font-weight: 600;
+    color: #7e22ce; /* purple-700 */
+    transition: background-color 0.3s ease;
+}
+
+.attraction-header:hover,
+.safety-header:hover,
+.meal-header:hover,
+.hospital-header:hover,
+.other-info-header:hover {
+    background-color: #e9d5ff; /* purple-200 */
+}
+
+.attraction-content,
+.safety-content,
+.meal-content,
+.hospital-content,
+.other-info-content {
+    display: none;
+    padding: 1rem;
+    background-color: #fff;
+    border-radius: 0.5rem;
+    margin-top: 0.5rem;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+}
+
+.attraction-content.active,
+.safety-content.active,
+.meal-content.active,
+.hospital-content.active,
+.other-info-content.active {
+    display: block;
+}
+
+.itinerary-table th,
+.meal-table th,
+.hospital-table th {
+    padding: 0.75rem;
+    text-align: left;
+    background-color: #a5b4fc; /* indigo-300 */
+    color: #312e81; /* indigo-900 */
+    font-weight: 700;
+}
+
+.itinerary-table td,
+.meal-table td {
+    padding: 0.75rem;
+    border-bottom: 1px solid #c7d2fe; /* indigo-200 */
+}
+
+.itinerary-table tbody tr:nth-child(odd),
+.meal-table tbody tr:nth-child(odd) {
+    background-color: #eef2ff; /* indigo-50 */
+}
+
+.itinerary-table tbody tr:nth-child(even),
+.meal-table tbody tr:nth-child(even) {
+    background-color: #ffffff;
+}
+
+.itinerary-table tbody tr:last-child td,
+.meal-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+/* Adjusted font size for meal table content */
+.meal-table td {
+    font-size: 1rem; /* text-base */
+}
+
+.header-image-container {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+
+.header-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.header-text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    font-size: 2.5rem;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+@media (min-width: 768px) {
+    .header-image-container {
+        height: 300px;
+    }
+
+    .header-text-overlay {
+        font-size: 3.5rem;
+    }
+}
+
+.image-container {
+    /* Generic container for image groups */
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1.5rem;
+    flex-wrap: wrap; /* Allow images to wrap on smaller screens */
+}
+
+.image-wrapper {
+    /* Generic wrapper for individual images */
+    width: 100%;
+    /* Default to full width on small screens */
+    max-width: 400px;
+    /* Max width for individual images */
+    border-radius: 0.75rem;
+    /* rounded-xl */
+    overflow: hidden;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+}
+
+.image-wrapper img {
+    width: 100%;
+    height: 200px;
+    /* Consistent height for all grouped images */
+    object-fit: cover;
+    display: block;
+}
+
+@media (min-width: 768px) {
+    .image-wrapper {
+        width: calc(50% - 0.5rem);
+        /* Two images side-by-side with gap */
+    }
+
+    .image-container.three-cols .image-wrapper {
+        width: calc(33.33% - 0.66rem);
+        /* Three images side-by-side with gap */
+    }
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.footer-logo {
+    height: 40px; /* Adjust logo size as needed */
+    width: auto;
+    margin-right: 0.5rem; /* Add some space to the right of the logo */
+}
+
+.footer-text-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 1.2; /* Adjust line height for closer text */
+}
+
+.hospital-table td {
+    font-size: 1rem; /* Adjust font size for hospital table */
+    padding-top: 0.8rem; /* Increased vertical padding */
+    padding-bottom: 0.8rem; /* Increased vertical padding */
+    padding-left: 1rem; /* Added left padding */
+}
+
+.hospital-table tbody tr:nth-child(odd) {
+    background-color: #eef2ff; /* indigo-50 */
+}
+
+.hospital-table tbody tr:nth-child(even) {
+    background-color: #ffffff;
+}
+
+.icon-text-pair {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1.125rem; /* text-lg */
+    font-weight: 600;
+    color: #4338ca; /* indigo-700 */
+}
+
+/* Specific styles for meal table image */
+.meal-table .image-container {
+    display: flex;
+    justify-content: flex-start; /* Align image to start of cell */
+    align-items: flex-start; /* Align image to top of cell */
+    height: auto; /* Allow container height to adjust */
+    padding-top: 0; /* Remove top padding from container */
+    padding-bottom: 0; /* Remove bottom padding from container */
+}
+
+.meal-table .image-wrapper.meal-image {
+    width: 100%; /* Allow image to fill cell width */
+    height: auto; /* Allow height to adjust naturally */
+    border-radius: 0.75rem; /* rounded-xl */
+    overflow: hidden;
+    box-shadow: none; /* Remove shadow for table cell image */
+}
+
+.meal-table .image-wrapper.meal-image img {
+    width: 100%;
+    /* Ensure image fills container width */
+    height: 150px;
+    /* Set a fixed height */
+    object-fit: cover;
+    /* Fill the space, potentially cropping */
+    border-radius: 0.75rem;
+    /* Apply border-radius directly to image */
+}
+
+.meal-table td:last-child {
+    text-align: left;
+    /* Align image within its cell to left */
+    padding-top: 0.5rem;
+    /* Adjust padding to align with text */
+    padding-bottom: 0.5rem;
+    /* Adjust padding */
+}
+
+/* Styles for embedded video */
+.video-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+    /* 16:9 aspect ratio */
+    height: 0;
+    overflow: hidden;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
